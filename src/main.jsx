@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import RailViharAdditionstimator from '../jacksonville_addition_estimator_ui.jsx';
+import RailViharAdditionEstimator from '../jacksonville_addition_estimator_ui';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
