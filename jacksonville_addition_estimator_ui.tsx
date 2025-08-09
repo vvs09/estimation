@@ -114,7 +114,8 @@ function RangeBar({ low, mid, high }: { low: number; mid: number; high: number }
 
 export default function RailViharAdditionEstimator() {
   // ===== Hero Video =====
-  const fallbackDownload = "sandbox:/mnt/data/25.08.07 - Front Video.mov"; // reliable for download
+// Use relative path for video hosted in site root (GitHub Pages can't load sandbox URLs)
+const fallbackDownload = "/25.08.07 - Front Video.mov";
   const [heroURL, setHeroURL] = useState<string | null>(null); // blob/object URL for playback
   const [videoError, setVideoError] = useState<boolean>(false);
   const [loadingVideo, setLoadingVideo] = useState<boolean>(true);
